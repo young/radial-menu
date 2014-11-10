@@ -1,0 +1,53 @@
+.menu {
+  width: 200px;
+  height: 90px;
+  margin: 30px;
+  position: relative;
+}
+
+/*.menu:hover {
+	font-size: 30px;
+}*/
+
+/*.menu:hover > div {
+	display: inline;
+}*/
+
+.menu-item {
+ /* transform: rotateZ(45deg); */
+  background: #FFEEFF;
+  float: right;
+  position: absolute;
+  bottom: 75px;
+  width: 50px;
+  height: 15px;
+  top: 0;
+  left: 0;
+  transform: translateY(30px);
+  transform-origin: top left;
+  transition: transform 1s, top 1s, left 1s;
+}
+
+
+
+.menu:hover .menu-item:nth-child(1) {
+  transform: translateY(30px) translateX(-20px) rotateZ(65deg);
+  top: -30px;
+  left: 20px;
+}
+
+.menu:hover .menu-item:nth-child(2) {
+  transform: translateY(30px) translateX(-20px) rotateZ(105deg);
+  top: -30px;
+  left: 20px;
+
+}
+
+.menu:hover .menu-item:nth-child(3) {
+  transform: translateY(30px) translateX(-20px) rotateZ(145deg);
+  top: -30px;
+  left: 20px;
+
+
+}
+
