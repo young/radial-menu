@@ -1,33 +1,27 @@
 .menu {
   width: 200px;
   height: 90px;
-  margin: 30px;
+  margin: 50px;
   position: relative;
 }
 
-/*.menu:hover {
-	font-size: 30px;
-}*/
-
-/*.menu:hover > div {
-	display: inline;
-}*/
-
 .menu-item {
-
-  background: #FFEEFF;
+  background: #2B2C80;
   float: right;
   position: absolute;
   bottom: 104px;
   width: 50px;
   height: 15px;
   visibility: hidden;
+  border-radius: 10px 0 0 10px;
   transform: translateY(30px);
   transform-origin: top left;
-  transition: transform 1s, top 1s, left 1s, visibility 1s;
+  transition: transform 1s, top 1s, left 1s, visibility 1.5s;
 }
 
-
+.menu-item:hover {
+  cursor: pointer;
+}
 
 .menu:hover .menu-item:nth-child(1) {
   transform: translateY(30px) translateX(20px) rotateZ(0deg);
@@ -42,6 +36,15 @@
 .menu:hover .menu-item:nth-child(3) {
   transform: translateY(55px) translateX(13px) rotateZ(90deg);
   visibility: visible;
+}
 
+.menu:hover .menu-item:nth-child(4) {
+  transform: translateY(55px) translateX(0px) rotateZ(130deg);
+  visibility: visible;
+}
+
+.menu:hover .menu-item:nth-child(5) {
+  transform: translateY(45px) translateX(-8px) rotateZ(180deg);
+  visibility: visible;
 }
 
