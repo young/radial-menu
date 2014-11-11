@@ -21,6 +21,7 @@
   transform: translateY(30px);
   transform-origin: top left;
   transition: transform 1s, top 1s, left 1s, visibility 1.5s;
+  outline: 1px solid transparent; /* Fix jagged edges in Firefox */
 }
 
 .menu-item:hover {
