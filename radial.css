@@ -5,11 +5,15 @@
   position: relative;
 }
 
+.wrapper {
+  position: relative;
+}
+
 .menu-item {
   background: #2B2C80;
   float: right;
   position: absolute;
-  bottom: 104px;
+  bottom: 30px;
   width: 50px;
   height: 15px;
   visibility: hidden;
@@ -24,7 +28,7 @@
 }
 
 .menu:hover .menu-item:nth-child(1) {
-  transform: translateY(30px) translateX(20px) rotateZ(0deg);
+  transform: translateY(30px) translateX(20px) rotateZ(1deg);
   visibility: visible;
 }
 
@@ -44,7 +48,7 @@
 }
 
 .menu:hover .menu-item:nth-child(5) {
-  transform: translateY(45px) translateX(-8px) rotateZ(180deg);
+  transform: translateY(45px) translateX(-8px) rotateZ(179deg);
   visibility: visible;
 }
 
